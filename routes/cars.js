@@ -7,7 +7,7 @@ const cars = require('../data/cars.json');
 
 //Get cars objects
 router.get('/', function (req, res, next) {
-    res.json(cars);
+    res.json(Object(cars));
   });
   
   //Get object from id
@@ -17,9 +17,11 @@ router.get('/', function (req, res, next) {
   
     //Error handler
     if (!getCar) {
-        res.json(getCar);
+        res.json(Object( getCar));
       res.status(200).send;
     } else {
-      res.json(getCar);
+      res.json(Object(getCar));
     }
   });
+
+module.exports = router;
