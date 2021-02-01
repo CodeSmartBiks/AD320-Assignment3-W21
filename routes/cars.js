@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-module.exports = router;//Json file path
+module.exports = router;
+//Json file path
 const cars = require('../data/cars.json');
 
 //Get cars objects
